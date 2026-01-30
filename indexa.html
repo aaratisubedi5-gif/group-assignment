@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sajilo Study Planner — Project Showcase</title>
+  <meta name="description" content="Sajilo Study Planner — study planning & task management system (A3 Project Solution)." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a class="brand" href="#top" aria-label="Sajilo Home">
+        <span class="dot"></span>
+        <span>Sajilo</span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuLinks">
+        ☰
+      </button>
+
+      <div class="links" id="menuLinks">
+        <a href="#overview">Overview</a>
+        <a href="#scope">Scope</a>
+        <a href="#features">Features</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#database">Database</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#agile">Agile</a>
+        <a href="#testing">Testing</a>
+        <a href="#demo">Demo</a>
+        <a href="#downloads">Downloads</a>
+        <a href="#team">Team</a>
+      </div>
+
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle theme">
+        🌙
+      </button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="pill">A3 Project Solution — Sajilo Study Planner</p>
+          <h1>Digital academic planning system for students</h1>
+          <p class="sub">
+            Sajilo provides a centralised platform to organise tasks/assessments, schedule study sessions,
+            and track study progress — helping reduce stress and missed deadlines.
+          </p>
+
+          <div class="cta">
+            <a class="btn primary" href="#demo">View Demo</a>
+            <a class="btn" href="#downloads">Submission Files</a>
+          </div>
+
+          <div class="kpis">
+            <div class="kpi"><strong>12</strong><span>Features</span></div>
+            <div class="kpi"><strong>7</strong><span>DB Tables</span></div>
+            <div class="kpi"><strong>Agile</strong><span>Iterative delivery</span></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">Quick Summary</h2>
+          <ul class="bullets">
+            <li><strong>Purpose:</strong> help students manage academic tasks, deadlines, schedules</li>
+            <li><strong>Users:</strong> university/college students</li>
+            <li><strong>Method:</strong> Agile development (incremental build + testing)</li>
+            <li><strong>Evidence:</strong> scope + schedule + ERD + testing + demo</li>
+          </ul>
+
+          <div class="note">
+            Tip: Replace images in <code>assets/</code> (Gantt/ERD/screenshots) before submission.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="section" id="overview">
+      <div class="container">
+        <h2>Project Overview</h2>
+        <div class="grid2">
+          <div class="card">
+            <h3>Problem</h3>
+            <p>
+              Students often struggle to balance coursework, assessments, work, and personal responsibilities,
+              leading to disorganisation, stress, and missed deadlines.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Proposed Solution</h3>
+            <p>
+              Sajilo Study Planner is a study planning and managing system that supports secure login,
+              task management, scheduling, reminders, and progress tracking — including usability features like
+              light/dark theme.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCOPE -->
+    <section class="section alt" id="scope">
+      <div class="container">
+        <h2>Scope</h2>
+        <p class="lead">We implemented features defined in the scope statement and controlled scope creep.</p>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>In Scope</h3>
+            <ul class="bullets">
+              <li>Login system setup</li>
+              <li>Task management + categorisation</li>
+              <li>Scheduling of study sessions</li>
+              <li>Task reminder system</li>
+              <li>Progress tracking</li>
+              <li>Admin controls</li>
+              <li>Task status management</li>
+              <li>Sorting by due date / priority</li>
+              <li>Theme switcher (dark/light)</li>
+              <li>Search bar tool</li>
+              <li>Priority assignments</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Out of Scope</h3>
+            <ul class="bullets">
+              <li>Mobile app</li>
+              <li>Real notifications</li>
+              <li>External integration</li>
+            </ul>
+            <div class="divider"></div>
+            <h3>Deliverables</h3>
+            <ul class="bullets">
+              <li>Business Case, Scope Statement, Project Charter</li>
+              <li>ERD (Mermaid + PNG), SQL Database</li>
+              <li>Gantt Chart, PPT Presentation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <div class="container">
+        <h2>12 System Features</h2>
+        <p class="lead">Features are grouped as base + added features as planned.</p>
+
+        <div class="grid3">
+          <div class="card"><h3>Secure Login</h3><p>Login & authentication for users.</p></div>
+          <div class="card"><h3>Task CRUD</h3><p>Add / edit / delete / manage study tasks.</p></div>
+          <div class="card"><h3>Task Categories</h3><p>Categorisation of tasks by subject.</p></div>
+          <div class="card"><h3>Priorities & Due Dates</h3><p>Assign priorities and due dates.</p></div>
+          <div class="card"><h3>Calendar Schedule</h3><p>Calendar-based schedule for sessions.</p></div>
+          <div class="card"><h3>Task Reminders</h3><p>Reminders for tasks and due dates.</p></div>
+
+          <div class="card"><h3>Progress Tracking</h3><p>Track progress over time.</p></div>
+          <div class="card"><h3>Status Management</h3><p>Track and manage task status.</p></div>
+          <div class="card"><h3>Theme Switcher</h3><p>Light/dark theme for accessibility.</p></div>
+          <div class="card"><h3>Search</h3><p>Search tasks quickly.</p></div>
+          <div class="card"><h3>Sorting</h3><p>Sort tasks by due date / priority.</p></div>
+          <div class="card"><h3>Admin Role</h3><p>Admin role controls and management.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHITECTURE -->
+    <section class="section alt" id="architecture">
+      <div class="container">
+        <h2>System Architecture</h2>
+        <div class="grid2">
+          <div class="card">
+            <h3>Architecture Summary</h3>
+            <p>
+              Sajilo follows a simple layered design:
+              <strong>UI</strong> (user interaction), <strong>Application logic</strong> (rules and processing),
+              and <strong>Database</strong> (persistent storage for users, tasks, schedules, reminders, and progress).
+            </p>
+            <ul class="bullets">
+              <li>Focus on maintainability and clarity for handover</li>
+              <li>Database-backed features align with ERD and SQL tables</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>ERD Image (PNG)</h3>
+            <img class="img" src="./assets/erd.png" alt="ERD diagram (export as PNG and place in assets/erd.png)"
+                 onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<p class=&quot;muted&quot;>Add ERD image: assets/erd.png</p>');" />
+            <p class="muted">Export from Mermaid / Workbench and save as <code>assets/erd.png</code>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATABASE -->
+    <section class="section" id="database">
+      <div class="container">
+        <h2>Database Design</h2>
+        <p class="lead">Relational database supports tasks, scheduling, reminders, and progress logging.</p>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Key Tables (7)</h3>
+            <ul class="bullets">
+              <li><strong>USERS</strong>: user account + role</li>
+              <li><strong>CATEGORIES</strong>: subject/categories</li>
+              <li><strong>PRIORITIES</strong>: priority types + weights</li>
+              <li><strong>TASKS</strong>: tasks with due dates, status, user/category/priority</li>
+              <li><strong>SCHEDULE_ENTRIES</strong>: planned sessions linked to tasks</li>
+              <li><strong>REMINDERS</strong>: reminder timings for tasks</li>
+              <li><strong>PROGRESS_LOG</strong>: progress percent + notes over time</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Relationships (examples)</h3>
+            <ul class="bullets">
+              <li>One <strong>USER</strong> creates many <strong>TASKS</strong></li>
+              <li><strong>CATEGORIES</strong> classify <strong>TASKS</strong></li>
+              <li><strong>PRIORITIES</strong> prioritise <strong>TASKS</strong></li>
+              <li>One <strong>TASK</strong> can have many <strong>REMINDERS</strong></li>
+              <li>One <strong>TASK</strong> can have many <strong>PROGRESS_LOG</strong> entries</li>
+              <li><strong>TASKS</strong> can be linked to <strong>SCHEDULE_ENTRIES</strong></li>
+            </ul>
+
+            <div class="note">
+              Put your SQL file in <code>downloads/sajilo_database.sql</code> so markers can open it easily.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section class="section alt" id="schedule">
+      <div class="container">
+        <h2>Project Schedule (ProjectLibre)</h2>
+        <p class="lead">
+          Schedule was planned with milestones: Requirements → Planning/ERD → UI Prototype → Core Features → Testing → Documentation → Presentation.
+        </p>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Gantt Chart Image</h3>
+            <img class="img" src="./assets/gantt.png" alt="Gantt chart (export as PNG and place in assets/gantt.png)"
+                 onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<p class=&quot;muted&quot;>Export ProjectLibre Gantt to PNG and save as assets/gantt.png</p>');" />
+          </div>
+          <div class="card">
+            <h3>Milestones Summary</h3>
+            <ul class="bullets">
+              <li>Week 1–2: Requirements</li>
+              <li>Week 2–3: Planning & ERD</li>
+              <li>Week 3–4: UI Prototype</li>
+              <li>Week 4–5: Core Features</li>
+              <li>Week 6: Testing</li>
+              <li>Week 7: Documentation</li>
+              <li>Week 8: Presentation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGILE -->
+    <section class="section" id="agile">
+      <div class="container">
+        <h2>Agile Methodology</h2>
+        <p class="lead">We delivered features iteratively and improved the system through testing and review.</p>
+
+        <div class="grid3">
+          <div class="card">
+            <h3>Plan</h3>
+            <p>Feature list and scope were prioritised, tasks split into manageable items.</p>
+          </div>
+          <div class="card">
+            <h3>Build</h3>
+            <p>Core features delivered first, then added usability features like theme and search.</p>
+          </div>
+          <div class="card">
+            <h3>Test & Improve</h3>
+            <p>Issues were identified via functional testing and corrected before final delivery.</p>
+          </div>
+        </div>
+
+        <div class="note">
+          Marker tip: add 1–2 real examples of improvements you made between iterations (bug fixes, UI changes, DB changes).
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTING -->
+    <section class="section alt" id="testing">
+      <div class="container">
+        <h2>Testing</h2>
+        <p class="lead">Functional test cases demonstrate system reliability and feature completion.</p>
+
+        <div class="table-wrap">
+          <table class="table" aria-label="Testing table">
+            <thead>
+              <tr>
+                <th>Test Case</th>
+                <th>Expected Result</th>
+                <th>Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Login</td><td>User logs in successfully</td><td><span class="tag ok">Pass</span></td></tr>
+              <tr><td>Create Task</td><td>Task saved and displayed</td><td><span class="tag ok">Pass</span></td></tr>
+              <tr><td>Edit/Delete Task</td><td>Task updates correctly</td><td><span class="tag ok">Pass</span></td></tr>
+              <tr><td>Sort by Due Date</td><td>Tasks sorted correctly</td><td><span class="tag ok">Pass</span></td></tr>
+              <tr><td>Search Task</td><td>Search returns matching tasks</td><td><span class="tag ok">Pass</span></td></tr>
+              <tr><td>Reminder Creation</td><td>Reminder stored for task</td><td><span class="tag ok">Pass</span></td></tr>
+              <tr><td>Progress Update</td><td>Progress % and notes stored</td><td><span class="tag ok">Pass</span></td></tr>
+              <tr><td>Theme Toggle</td><td>UI switches light/dark</td><td><span class="tag ok">Pass</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="muted">Replace Pass/Fail with your real results and add more test cases if you have them.</p>
+      </div>
+    </section>
+
+    <!-- DEMO -->
+    <section class="section" id="demo">
+      <div class="container">
+        <h2>Demo & Screenshots</h2>
+        <p class="lead">Evidence that the system works (screenshots + demo link).</p>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Demo Video</h3>
+            <p>
+              Loom demo:
+              <a href="https://www.loom.com/share/3009ec14bac941359a45bfb031cb03c9" target="_blank" rel="noreferrer">
+                Watch demo
+              </a>
+            </p>
+            <p class="muted">If you have a newer link, replace it here.</p>
+          </div>
+
+          <div class="card">
+            <h3>App Screenshots</h3>
+            <div class="shots">
+              <img class="shot" src="./assets/screenshot1.png" alt="Screenshot 1" onerror="this.style.display='none';" />
+              <img class="shot" src="./assets/screenshot2.png" alt="Screenshot 2" onerror="this.style.display='none';" />
+              <img class="shot" src="./assets/screenshot3.png" alt="Screenshot 3" onerror="this.style.display='none';" />
+            </div>
+            <p class="muted">Add images as assets/screenshot1.png etc.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOWNLOADS -->
+    <section class="section alt" id="downloads">
+      <div class="container">
+        <h2>Downloads (Submission Evidence)</h2>
+        <p class="lead">Keep everything in one place for easy marking.</p>
+
+        <div class="grid3">
+          <a class="card link-card" href="./downloads/sajilo_database.sql" download>
+            <h3>SQL Database</h3>
+            <p>Download schema / tables file</p>
+          </a>
+
+          <a class="card link-card" href="./downloads/UserManual.pdf">
+            <h3>User Manual</h3>
+            <p>How to use Sajilo (PDF)</p>
+          </a>
+
+          <a class="card link-card" href="./downloads/TestingReport.pdf">
+            <h3>Testing Report</h3>
+            <p>Test cases + results (PDF)</p>
+          </a>
+
+          <a class="card link-card" href="./downloads/DesignDoc.pdf">
+            <h3>Design Document</h3>
+            <p>Architecture + diagrams (PDF)</p>
+          </a>
+
+          <div class="card">
+            <h3>Source Code</h3>
+            <p class="muted">If allowed, add a link to your GitHub or a zip inside downloads/.</p>
+          </div>
+
+          <div class="card">
+            <h3>Presentation</h3>
+            <p class="muted">Add your PPT in downloads/ if you want a single portal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section" id="team">
+      <div class="container">
+        <h2>Team</h2>
+        <div class="grid2">
+          <div class="card">
+            <h3>Binisha Thapa Magar</h3>
+            <p>Project Manager & Analyst</p>
+          </div>
+          <div class="card">
+            <h3>Aarati Subedi</h3>
+            <p>Developer & UI/Prototype Designer</p>
+          </div>
+        </div>
+        <p class="muted">Update roles/names if needed for your final submission.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container foot">
+        <p>© <span id="year"></span> Sajilo Study Planner — A3 Project Solution</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
